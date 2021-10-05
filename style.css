@@ -1,0 +1,12 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+#search {
+    color: white;
+    background-color: rgb(82, 165, 241);
+}
+ {
+    color: black;
+}
