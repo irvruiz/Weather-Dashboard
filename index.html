@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+  <title>Weather</title>
 </head>
+
 <body>
-  <h1 class="">Weather Dashboard</h1>
-  <form action="" aria-label="search-bar" id="search bar">
-    <input type="text" placeholder="San Diego">
-  </form>
-  <div>
-    <button id="search">Search</button>
+
+  <div class="jumbotron jumbotron-fluid" id="jumbotron_head" >
+    <div class="container"  >
+      <h1 class="display-4">Weather Dashboard</h1>
+      <p class="lead">5 Day Weather Report</p>
+    </div>
+    <button id ="clear">Clear Search</button>
   </div>
-  <ul class="cities">
-    <button>Austin</button>
-    <button>Chicago</button>
-    <button>New York</button>
-    <button>Orlando</button>
-    <button>San Francisco</button>
-    <button>Seattle</button>
-    <button>Denver</button>
-    <button>Atlanta</button>
-  </ul>
+
+
+  <div class="container" id="search_area">
+    <div class="row align-items-start">
+      <div class="col-4">
+
+
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+          </div>
+        </nav>
+        <div class="input-group mb-3">
+          <input id="inputCity" type="text" class="form-control" placeholder="Search For A City"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+        <div id = "resultList"></div> 
+      </div>
+      <div class="col-8" >
+
+        <div class="row" id="result_area">
+          <div class = "container-lg" id="weather_detail"></div>
+          
+        </div>
+        <div><h1>Forecast:</h1></div>
+        <div id="five_day" class="row" style="display: flex; justify-content: space-evenly; margin-top : 10px">
+            
+
+        </div>
+
+      </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
